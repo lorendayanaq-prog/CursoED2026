@@ -3,13 +3,11 @@ Autores:
 Loren Dayana Quintero Ramos
 Mery Daniela Angulo Sinisterra
 KArol Nicol Diaz Silva
-Alan Andres Banguera Mina
 
 */
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include <time.h>
 
 #define MAX_CONTENEDORES 30
@@ -19,29 +17,24 @@ int pesos[MAX_CONTENEDORES];
 int cantidad = 0;
 int ordenado = 0;
 
-/* Prototipos */
+
 void registrarManual();
 void generarAleatorios();
 void mostrarContenedores();
 void pausar();
 int leerEntero(const char *mensaje, int *valor);
 
-/* QuickSort */
 void quickSort(int arr[], int inicio, int fin);
 int particion(int arr[], int inicio, int fin);
 
-/* MergeSort */
 void mergeSort(int arr[], int izquierda, int derecha);
 void merge(int arr[], int izquierda, int medio, int derecha);
 
-/* HeapSort */
 void heapSort(int arr[], int n);
 void heapify(int arr[], int n, int i);
 
-/* Búsqueda Binaria */
 int busquedaBinaria(int arr[], int n, int valor);
 
-/* ===================== PAUSAR ===================== */
 void pausar()
 {
     char buffer[BUFFER_SIZE];
@@ -64,7 +57,6 @@ int leerEntero(const char *mensaje, int *valor)
     return 1;
 }
 
-/* ===================== MAIN ===================== */
 int main()
 {
     int opcion;
@@ -207,7 +199,6 @@ int main()
     return 0;
 }
 
-/* ===================== REGISTRO MANUAL ===================== */
 void registrarManual()
 {
     int i;
@@ -234,7 +225,6 @@ void registrarManual()
     ordenado = 0;
 }
 
-/* ===================== ALEATORIOS ===================== */
 void generarAleatorios()
 {
     int i;
@@ -256,7 +246,6 @@ void generarAleatorios()
     printf("Pesos generados correctamente.\n");
 }
 
-/* ===================== MOSTRAR ===================== */
 void mostrarContenedores()
 {
     int i;
@@ -275,7 +264,6 @@ void mostrarContenedores()
     }
 }
 
-/* ===================== QUICKSORT ===================== */
 int particion(int arr[], int inicio, int fin)
 {
     int pivote = arr[fin];
@@ -309,8 +297,6 @@ void quickSort(int arr[], int inicio, int fin)
         quickSort(arr, pi + 1, fin);
     }
 }
-
-/* ===================== MERGESORT ===================== */
 void merge(int arr[], int izquierda, int medio, int derecha)
 {
     int i, j, k;
@@ -356,7 +342,6 @@ void mergeSort(int arr[], int izquierda, int derecha)
     }
 }
 
-/* ===================== HEAPSORT ===================== */
 void heapify(int arr[], int n, int i)
 {
     int mayor = i;
@@ -397,7 +382,6 @@ void heapSort(int arr[], int n)
     }
 }
 
-/* ===================== BÚSQUEDA BINARIA ===================== */
 int busquedaBinaria(int arr[], int n, int valor)
 {
     int izquierda = 0;

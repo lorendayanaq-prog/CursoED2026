@@ -7,7 +7,6 @@
 - Loren Dayana Quintero Ramos
 - Mery Daniela Angulo Sinisterra
 - Karol Nicol Díaz Silva
-- Alan Andrés Banguera Mina
 
 # Descripción
 
