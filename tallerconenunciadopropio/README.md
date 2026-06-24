@@ -1,3 +1,8 @@
+## Integrantes:
+- Loren Dayana Quintero Ramos
+- Karol Nicol díaz Silva
+- Mery Daniela Angulo Sinisterra
+
 ## Enunciado del problema
 
 ## Sistema de gestión de oyentes en radio en vivo
