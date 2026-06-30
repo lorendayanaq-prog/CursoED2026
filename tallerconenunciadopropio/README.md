@@ -5,23 +5,8 @@
 
 ## Enunciado del problema
 
-## Sistema de gestión de oyentes en radio en vivo
+## SISTEMA DE GESTIÓN DE OYENTES EN RADIO EN VIVO
 
-En una estación de radio en vivo, se requiere desarrollar un sistema para gestionar la participación de los oyentes durante un programa.
-Los oyentes que desean participar se registran en una cola de llamadas (FIFO), respetando el orden de llegada. Cada oyente cuenta con la siguiente información: 
+Desarrollar en lenguaje C una aplicación para gestionar la participación de los oyentes durante un programa de radio en vivo. Cada oyente que desee intervenir deberá registrarse con su nombre, ciudad y tema de participación, ingresando a una cola de llamadas. Los participantes serán atendidos por el presentador en el mismo orden en que realizaron su inscripción, aplicando el principio FIFO. Al finalizar cada llamada, el sistema deberá permitir registrar si el oyente desea participar en el sorteo organizado por la emisora.
 
-- Nombre 
-- Ciudad
-- Tema de participación
-
-Cuando el presentador lo decide, los oyentes son retirados de la cola y clasificados según el tipo de intervención.
-
-## Cola de llamadas
-
-- Almacena los oyentes en espera.
-- Se atienden en orden de llegada (FIFO).
-
-## Pila
-
-- Registra los participantes (oyentes) que decidieron participar o inscribirse en el sorteo del programa. 
-- Funciona bajo el principio LIFO (Last In, First Out), donde el último oyente registrado en la pila es el primero en ser consultado o procesado.
+Los oyentes que acepten participar en el sorteo deberán almacenarse en una pila, respetando en todo momento el principio LIFO. Por lo tanto, el último oyente inscrito será el primero en ser consultado, retirado o seleccionado durante el procesamiento del sorteo. La aplicación deberá integrar ambas estructuras dentro de un mismo flujo: los oyentes ingresan inicialmente a la cola de llamadas, son atendidos según su orden de llegada y, dependiendo de su decisión, pueden pasar posteriormente a la pila de participantes del sorteo.
