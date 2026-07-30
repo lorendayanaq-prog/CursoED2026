@@ -4,9 +4,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "cola.h"
 
 /* Declaraciones adelantadas */
-typedef struct ColaPasajero ColaPasajero;
 typedef struct NodoViaje NodoViaje;
 
 /* Nodo de la lista de destinos */

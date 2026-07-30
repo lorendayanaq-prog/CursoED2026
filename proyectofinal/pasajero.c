@@ -286,4 +286,24 @@ void liberarCola(ColaPasajero *cola)
     }
 
     cola->final = NULL;
+}void consultarPasajero(ListaDestino *lista)
+{
+    int documento;
+    NodoPasajero *pasajero;
+
+    printf("\nDocumento: ");
+    scanf("%d", &documento);
+
+    pasajero = buscarPasajero(lista, documento);
+
+    if (pasajero == NULL)
+    {
+        printf("\nPasajero no encontrado.\n");
+        return;
+    }
+
+    printf("\nPasajero encontrado");
+    printf("\nDocumento: %d", pasajero->documento);
+    printf("\nTipo de documento: %d", pasajero->tipoDocumento);
+    printf("\nEstado: %s\n", pasajero->estado);
 }

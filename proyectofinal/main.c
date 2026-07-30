@@ -2,13 +2,16 @@
 #include <stdlib.h>
 
 #include "menu.h"
-#include "destino.h"
 
 int main()
 {
-    NodoDestino *listaDestinos = NULL;
+    ListaDestino listaDestinos;
+
+    inicializarLista(&listaDestinos);
 
     menuPrincipal(&listaDestinos);
+
+    liberarDestinos(&listaDestinos);
 
     return 0;
 }

@@ -6,33 +6,7 @@
 #include <string.h>
 
 #include "destino.h"
-
-
-/* Nodo de pasajero */
-typedef struct NodoPasajero
-{
-    int documento;
-
-    int tipoDocumento;
-
-    char estado[20];
-
-    struct NodoPasajero *sig;
-
-}NodoPasajero;
-
-
-/* Cola FIFO de pasajeros */
-
-typedef struct ColaPasajero
-{
-    NodoPasajero *frente;
-
-    NodoPasajero *final;
-
-    int totalEmbarcados;
-
-}ColaPasajero;
+#include "cola.h"
 
 
 
